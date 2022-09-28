@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import axios from 'axios'
 import {
   appWindow,
   PhysicalSize,
@@ -48,22 +49,21 @@ function App() {
   }
 
   useEffect(() => {
-    setGasSocket()
+    getGas()
   }, [])
 
-  const setGasSocket = () => {
-    // 与服务端建立长连接以获取实时Gas
-    const socket = new WebSocket('')
-    socket.addEventListener('message', (event) => {
-      try {
-        const res = JSON.parse(event.data)
-        if (res.event === 'gas') {
-          setNextBlockGasPrice(JSON.parse(res.data))
-        }
-      } catch (error) {
-        console.error(error)
-      }
-    })
+  const getGas = () => {
+    setInterval(() => {
+      axios({
+        url: `https://api.blocknative.com/gasprices/blockprices`,
+      })
+        .then((res) => {
+          setNextBlockGasPrice(res.data)
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    }, 1500)
   }
 
   const moveAllComponents = async (parentX, parentY) => {
