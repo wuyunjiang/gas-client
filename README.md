@@ -10,7 +10,7 @@
 ![image](https://user-images.githubusercontent.com/16558218/192685349-9e8d4ad8-5d3e-4769-942a-ff7990390dee.png)
 
 **联系我直接获取**
-
+电话/微信同号：15756290079
 
 **自己编译**
 
