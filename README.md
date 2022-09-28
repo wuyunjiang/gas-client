@@ -3,6 +3,7 @@
 
 
 软件主要有两个功能
+
 1、显示实时 BaseFee 和矿工小费信息，点击 gas 小图标，显示 gas 详细，分为 1、2、3 档
 ![image](https://user-images.githubusercontent.com/16558218/192685257-6ae10586-df4c-403a-995f-2764e3b72a99.png)
 
@@ -10,7 +11,8 @@
 ![image](https://user-images.githubusercontent.com/16558218/192685349-9e8d4ad8-5d3e-4769-942a-ff7990390dee.png)
 
 **联系我直接获取**
-电话/微信同号：15756290079
+
+![63a34afc9f37533034bef29fafdef9b](https://user-images.githubusercontent.com/16558218/192689179-3e8ed384-0f5f-4567-840d-356d6200d2a0.jpg)
 
 **自己编译**
 
