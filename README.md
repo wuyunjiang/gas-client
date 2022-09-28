@@ -10,23 +10,15 @@
 ![image](https://user-images.githubusercontent.com/16558218/192685349-9e8d4ad8-5d3e-4769-942a-ff7990390dee.png)
 
 **联系我直接获取**
-电话/微信同号：15756290079
+
 
 **自己编译**
 
 1. 克隆仓库代码到本地
 
-2. npm install 安装依赖
+2. 运行 npm install 安装依赖
 
-3. 修改 App.js 中 setGasSocket 方法内的代码，连接到自己的 WebSocket 服务器
+3. 运行 npm run tauri dev 调试代码
 
-4. 运行 npm run tauri dev 调试代码
+4. 运行 npm run tauri build 生成安装包
 
-5. 运行 npm run tauri build 生成安装包
-
-
-关于第三步，需要自己开发服务端代码，原理也很简单，间隔几秒调用一下 blocknative 的获取 gas 的接口，然后与客户端建立 socket 连接传递数据就好
-
-```
-https://api.blocknative.com/gasprices/blockprices
-```
