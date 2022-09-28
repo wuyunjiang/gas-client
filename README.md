@@ -14,11 +14,16 @@
 
 **自己编译**
 
-1、克隆仓库代码到本地
-2、npm install 安装依赖
-3、修改 App.js 中 setGasSocket 方法内的代码，连接到自己的 WebSocket 服务器
-4、运行 npm run tauri dev 调试代码
-5、运行 npm run tauri build 生成安装包
+1. 克隆仓库代码到本地
+
+2. npm install 安装依赖
+
+3. 修改 App.js 中 setGasSocket 方法内的代码，连接到自己的 WebSocket 服务器
+
+4. 运行 npm run tauri dev 调试代码
+
+5. 运行 npm run tauri build 生成安装包
+
 
 关于第三步，需要自己开发服务端代码，原理也很简单，间隔几秒调用一下 blocknative 的获取 gas 的接口，然后与客户端建立 socket 连接传递数据就好
 
