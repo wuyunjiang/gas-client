@@ -1,0 +1,56 @@
+.listen_var_by_contract {
+  min-height: 100px;
+  width: 523px;
+  background: #060d20;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+.listen_var_by_contract .action {
+  display: flex;
+}
+.listen_var_by_contract .action input {
+  flex: 1;
+  font-size: 16px;
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 8px 10px 8px;
+  background-color: transparent;
+  border: 0.5px solid #4cea98;
+  color: #ccc;
+}
+.listen_var_by_contract .action input:focus-visible {
+  outline: none;
+}
+.listen_var_by_contract .action button {
+  background-color: aquamarine;
+  border-radius: 5px;
+  border: 0;
+}
+.listen_var_by_contract .action button.watching {
+  background-color: #ccc;
+}
+.listen_var_by_contract .pending {
+  margin: 10px;
+}
+.listen_var_by_contract .pending span {
+  font-weight: 600;
+  color: #eee;
+  margin-left: 5px;
+}
+.listen_var_by_contract .contract_var_box .result .item {
+  padding: 5px 10px;
+}
+.listen_var_by_contract .contract_var_box .result .item span {
+  font-weight: 600;
+  color: #eee;
+  margin-left: 5px;
+}
+.error_msg {
+  color: red;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 12px;
+  z-index: 999;
+}

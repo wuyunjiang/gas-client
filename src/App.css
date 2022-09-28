@@ -1,0 +1,45 @@
+.ball {
+  background-color: rgba(95, 158, 160, 0.9);
+  color: #333;
+  font-weight: 800;
+  padding: 3px 5px;
+  border-radius: 10px;
+  display: inline-block;
+}
+.ball .gas {
+  font-size: 22px;
+  text-align: center;
+}
+.ball .gas .prority {
+  font-size: 17px;
+}
+.ball .action {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.ball .action img {
+  z-index: 9999;
+  height: 20px;
+  width: 20px;
+  padding: 2px;
+  border-radius: 5px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+.ball .action img:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.ball .action img.top {
+  background: rgba(0, 0, 0, 0.2);
+}
+.ball .action img:first-child {
+  cursor: pointer;
+}
+.warning_gas {
+  background: rgba(242, 151, 0, 0.883) !important;
+}
+.alarm_gas {
+  background: #bf1920 !important;
+}
